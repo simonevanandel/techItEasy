@@ -328,4 +328,74 @@ export let inventory = [
     },
 ];
 
+// Opdracht 1
+// Opdracht 1a: Gebruik een array-methode om een array te maken met daarin alle tv-type namen. Log de uitkomst in de console.
 
+// const tvType = inventory.map((tvType) => {
+//     return tvType.type;
+// })
+//
+// console.log(tvType);
+// console.log(inventory.length);
+
+// Opdracht 1b: Gebruik een array-methode om alle informatie te verzamelen van de tv's die volledig uitverkocht zijn. Log de uitkomst in de console.
+
+// const soldOut = inventory.filter((tv) => {
+//     return tv.sold === tv.originalStock;
+// })
+//
+// console.log(soldOut);
+
+// Opdracht 1c: Gebruik een array-methode om de informatie van het tv-type 'NH3216SMART' op te halen.
+
+// const outcome = inventory.find((tv) => {
+//     return tv.type === 'NH3216SMART';
+// })
+//
+// console.log(outcome);
+
+// Opdracht 1d: Gebruik een array-methode om een lijst te maken van de merk- en tv-namen waarbij aangegeven wordt of deze geschikt zijn voor sport-kijkers (een verversingssnelheid van 100Hz of hoger). Doe dit in het format { name: 'Toshiba HD TV', suitable: false }. Log de uitkomst in de console.
+
+// const sportProducts = inventory.map((tv) => {
+//     if (tv.refreshRate >= 100) {
+//         return { name: `${tv.brand} ${tv.name}`, suitable: true }
+//     } else {
+//         return { name: `${tv.brand} ${tv.name}`, suitable: false }
+//     }
+// });
+//
+// console.log(sportProducts);
+
+// Opdracht 1e (uitdaging): Gebruik array-methoden om alle informatie te verzamelen van de tv's die beschikbaar zijn in schermgroottes van 65 inch en groter.
+
+// const largeProducts = inventory.filter((tv) => {
+//     const hasLargeScreen = tv.availableSizes.find((size) => {
+//         return size >= 65;
+//     });
+//
+//     return hasLargeScreen;
+//
+//     // je kunt dit ook korter opschrijven:
+//     // return tv.availableSizes.find((size) => {
+//     //     return size >= 65;
+//     // });
+// });
+
+// console.log(largeProducts);
+
+// Opdracht 1f (uitdaging): Gebruik array-methoden om alle informatie te verzamelen van de tv's die over ambilight beschikken. Log de uitkomst in de console.
+
+// const ambiLightProducts = inventory.filter((tv) => {
+//     const optionAmbilight = tv.options.find((option) => {
+//         return option.name === 'ambiLight';
+//     });
+//
+//     if (optionAmbilight.applicable === true) {
+//         return true;
+//     }
+//
+//     // je kunt dit ook korter opschrijven:
+//     // return optionAmbilight.applicable === true;
+// });
+//
+// console.log(ambiLightProducts);
